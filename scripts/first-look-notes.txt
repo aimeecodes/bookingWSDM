@@ -1,0 +1,46 @@
+- user_id - User ID
+- checkin - Reservation check-in date
+- checkout - Reservation check-out date
+- created_date - Date when the reservation was made
+- affiliate_id - An anonymized ID of affiliate channels where the booker came from (e.g. direct, some third party referrals, paid search engine, etc.)
+- device_class - desktop/mobile
+- booker_country - Country from which the reservation was made (anonymized)
+- hotel_country - Country of the hotel (anonymized)
+- city_id - city_id of the hotel's city (anonymized)
+- utrip_id - Unique identification of user's trip (a group of multi-destinations bookings within the same trip).
+
+features to engineer:
+	total length of stay (days) per trip
+	group locations that appear to be 'connected'
+	total "legs" in trip
+	loc1 loc1length loc2 loc2length ... locn locnlength
+	has guest taken this trip before (y/n), previous times trip has been taken
+	times guest has travelled in the current booking year
+	number of stops on trip
+	create types of trip based on length of stay
+	extrapolate cost associated (??)
+
+to clean dataset:
+	need to create one single row for each unique trip
+	[need to read more about inputs for LSTM models]
+
+
+research areas:
+	sequential recommendation systems
+	collective sequential dependency vs. point-wise dependency
+	embedding-based SRSs
+
+sequential recommendation algorithms
+	- RNNs
+	- K-means clustering to generate another 
+
+
+Durdica - GNN
+Inna 	- RNN
+Aimee 	- CNN, K-means clustering to group city_ids
+
+FOCUS ON: 
+1) what does the data need to look like?
+2) applications of algorithm
+3) necessary libraries to import
+4) kaggle projects that implement the library
